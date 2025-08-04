@@ -29,6 +29,7 @@ class PostListView(ListView):
 class MagazineListView(ListView):
     paginate_by = 6
     model = Magazine
+    template_name = 'blog/magazine_list.html'
 
     def get_queryset(self):
         magazine = get_object_or_404(
@@ -50,7 +51,7 @@ class MagazineListView(ListView):
         context = super().get_context_data(**kwargs)
         context['magazine'] = get_object_or_404(
             Magazine,
-            slug=kwargs['magazine'],
+            slug=self.kwargs['magazine'],
             is_published=True
         )
         return context
@@ -64,7 +65,8 @@ class UserPostListView(ListView):
 
     def dispatch(self, request, *args, **kwargs):
         self.user = get_object_or_404(
-            User, username=kwargs['username']
+            User,
+            username=kwargs['username']
         )
         return super().dispatch(request, *args, **kwargs)
 
