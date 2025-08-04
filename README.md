@@ -63,3 +63,22 @@ python manage.py runserver
 ```
 
 Откройте в браузере: http://127.0.0.1:8000/
+
+### Примеры использования:
+![Image alt](examples/example1.png)
+
+![Image alt](examples/example2.png)
+
+![Image alt](examples/example3.png)
+
+![Image alt](examples/example4.png)
+
+![Image alt](examples/example5.png)
+
+![Image alt](examples/example6.png)
+
+![Image alt](examples/example7.png)
+
+![Image alt](examples/example8.png)
+
+![Image alt](examples/example9.png)
