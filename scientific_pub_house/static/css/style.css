@@ -1,0 +1,168 @@
+h1, h2, h3, h4, h5, h6 {
+    color: #2f3e4e;
+    margin-bottom: 40px;
+    font-family: 'Georgia', serif;
+    font-size: 1.5em;
+    transform: scaleY(1.1);
+}
+
+.body {
+    font-family: 'Georgia', serif;
+    background-color: #edecec;
+    margin: 0;
+    padding: 0;
+}
+
+ .posts-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 30px;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .post-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .post-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+
+        .post-content {
+            padding: 20px;
+        }
+
+        .post-title {
+            font-size: 1.4rem;
+            color: #2f3e4e;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .post-meta {
+            color: #6c757d;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            line-height: 1.5;
+        }
+
+        .post-text {
+            color: #495057;
+            font-family: 'Georgia', serif;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .post-actions {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .read-more {
+            background: #0B63F6;
+            color: #ffffff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .read-more:hover {
+            background: #ffffff;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #3C82F8;
+        }
+
+        .comments-count {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .warning-text {
+            color: #dc3545;
+            font-size: 0.8rem;
+            margin-top: 5px;
+        }
+
+        .author-link {
+            color: #6c757d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .author-link:hover {
+            color: #2582e1;
+        }
+
+        .category-link {
+            color: #6c757d;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .category-link:hover {
+            color: #2582e1;
+        }
+
+        @media (max-width: 768px) {
+            .posts-container {
+                grid-template-columns: 1fr;
+            }
+
+            .animated-title {
+                font-size: 2rem;
+            }
+        }
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 800px) {
+    h1 {
+        font-size: 2em; /* Уменьшаем размер заголовка для маленьких экранов */
+    }
+
+    h2 {
+        font-size: 1.8em; /* Уменьшаем размер для h2 */
+    }
+
+    h3 {
+        font-size: 1.4em; /* Уменьшаем размер для h3 */
+    }
+
+    p, ul {
+        font-size: 1em; /* Уменьшаем текст для параграфов и списков */
+    }
+
+    .button {
+        padding: 8px 16px; /* Уменьшаем размеры кнопки */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5em; /* Еще больше уменьшаем размер заголовка */
+    }
+
+    h2 {
+        font-size: 1.6em; /* Еще меньше для h2 */
+    }
+
+    h3 {
+        font-size: 1.3em; /* Еще меньше для h3 */
+    }
+}

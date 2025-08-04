@@ -1,0 +1,43 @@
+{% load static %}
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Научные публикации</title>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="posts-container">
+        <div class="post-card">
+            {% if post.image %}
+            <a href="{{ post.image.url }}" target="_blank">
+                <img class="post-image" src="{{ post.image.url }}" alt="{{ post.title }}">
+            </a>
+            {% endif %}
+            
+            <div class="post-content">
+                <h3 class="post-title">{{ post.title|truncatechars:200 }}</h3>
+                
+                <div class="post-meta">
+                    {% if not post.is_published %}
+                        <p class="warning-text">Пост снят с публикации админом</p>
+                    {% elif not post.magazine.is_published %}
+                        <p class="warning-text">Выбранная категория снята с публикации админом</p>
+                    {% endif %}
+                    
+                    <span>{{ post.pub_date|date:"d E Y" }}</span> • 
+                    <span>Автор: <a class="author-link" href="{% url 'blog:profile_detail' post.author.username %}">
+	                    @{{ post.author.username }}</a></span> •
+                    <span>Журнал: {% include "includes/category_link.html" %}</span>
+                </div>
+                <p class="post-text">{{ post.text|truncatechars:120 }}</p>
+                <div class="post-actions">
+                    <a href="{% url 'blog:post_detail' post.id %}" class="read-more">Читать далее</a>
+                    <span class="comments-count">Комментариев: {{ post.comment_count }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

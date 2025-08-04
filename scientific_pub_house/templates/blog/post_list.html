@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+{% block title %}
+  Лента записей
+{% endblock %}
+{% block content %}
+<div class="container py-5">
+  <div class="header text-center mb-5">
+    <h1 class="animated-title">Научные публикации</h1>
+  </div>
+ 
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+    {% for post in page_obj %}
+    <div class="col">
+      <article class="h-100">
+        {% include "includes/post_card.html" %}
+      </article>
+    </div>
+    {% endfor %}
+  </div>
+
+  <div class="mt-5">
+    {% include "includes/paginator.html" %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block title %}
+  Публикации в журнале {{ magazine.title }}
+{% endblock %}
+{% block content %}
+  <h1 class="text-center">Публикации в журнале - {{ magazine.title }}</h1>
+  <p class="col-6 offset-3 mb-5 lead text-center">{{ magazine.description }}</p>
+<div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+  {% for post in page_obj %}
+    <article class="mb-5">
+      {% include "includes/post_card.html" %}
+    </article>
+  {% endfor %}
+</div>
+  {% include "includes/paginator.html" %}
+{% endblock %}

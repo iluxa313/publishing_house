@@ -1,0 +1,813 @@
+[
+{
+  "model": "blog.magazine",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T18:44:29.409Z",
+    "title": "«Neural»",
+    "description": "Искусственный интеллект, машинное обучение в науке. Основной фокус — на прорывах в области нейросетей.",
+    "slug": "neural"
+  }
+},
+{
+  "model": "blog.magazine",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T18:45:32.775Z",
+    "title": "«Биохакинг»",
+    "description": "Смелые медицинские эксперименты, биоинженерия. Здесь публикуют материалы о радикальных подходах в медицине, таких как использование органов животных для людей.",
+    "slug": "biohacking"
+  }
+},
+{
+  "model": "blog.magazine",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T18:46:29.981Z",
+    "title": "«Горизонт»",
+    "description": "Астрофизика, космология, гравитационные волны. Основная рубрика — «Космические катаклизмы» — идеально для описания столкновений нейтронных звезд.",
+    "slug": "horizont"
+  }
+},
+{
+  "model": "blog.magazine",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T18:47:35.491Z",
+    "title": "«Медицина будущего»",
+    "description": "Экспериментальные методы лечения.",
+    "slug": "medicine_future"
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T18:56:49.107Z",
+    "title": "Искусственный интеллект предсказывает структуру белков с рекордной точностью",
+    "text": "В 2023 году система DeepMind AlphaFold 3 совершила прорыв в предсказании структуры белков и их взаимодействий с другими молекулами. Алгоритм использует глубокое обучение для моделирования 3D-структур, что ускоряет разработку лекарств и понимание болезней. Ученые уже применяют его для изучения рака, нейродегенеративных заболеваний и создания новых ферментов.",
+    "pub_date": "2024-10-09T21:00:00Z",
+    "author": 1,
+    "image": "images/Low-Res_IPD-hallucinated_rings.png-1_wRvBzcD.png",
+    "magazine": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:08:36.572Z",
+    "title": "Нейросеть научилась предсказывать эпилептические приступы за 30 минут до начала",
+    "text": "Ученые из MIT разработали алгоритм, анализирующий активность мозга через носимые датчики. Система с точностью 92% предупреждает пациентов о надвигающемся приступе, позволяя принять лекарство или вызвать помощь. Технология использует гибридную архитектуру из LSTM-сетей и трансформеров.",
+    "pub_date": "2024-05-19T21:00:00Z",
+    "author": 1,
+    "image": "images/1765305723_0_0_3640_2048_1280x0_80_0_0_f47ab40fb740a2782d02c5d9227213b0_QbLWUDv.jpg",
+    "magazine": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:09:43.636Z",
+    "title": "ИИ расшифровал язык дельфинов: первые шаги к межвидовому общению",
+    "text": "Проект CETI (Cetacean Translation Initiative) применил модели типа GPT-4 для анализа 4,5 млн щелчков дельфинов. Алгоритм выявил паттерны, похожие на синтаксис человеческой речи, включая «слова» для обозначения рыб и опасностей.",
+    "pub_date": "2023-02-19T21:00:00Z",
+    "author": 1,
+    "image": "images/1524949401_0_0_1036_588_768x0_80_0_0_af83d646fee4c37d47a835d37c8e460e_xnl4tA8.jpg",
+    "magazine": 1
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:11:22.256Z",
+    "title": "Первая успешная пересадка генетически модифицированной свиной почки человеку",
+    "text": "В начале 2024 года хирурги из Массачусетской больницы провели уникальную операцию: пациенту пересадили почку свиньи, отредактированную с помощью CRISPR. Орган функционировал более месяца без отторжения. Это открывает путь к решению проблемы нехватки донорских органов.",
+    "pub_date": "2023-02-09T21:00:00Z",
+    "author": 1,
+    "image": "images/8oa80ptkpqw9gbbs8tdaws5fx12iu21q_fJMy0tD.jpg",
+    "magazine": 2
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:17:02.354Z",
+    "title": "Киборг-революция: вживляемый чип дал мне инфракрасное зрение",
+    "text": "Инженер из Берлина вживил в зрительную кору мозга микрочип с датчиком ИК-излучения. После 6 месяцев тренировок он научился «видеть» тепловые сигнатуры в темноте. Этично ли такое усовершенствование? Дебаты в сообществе.",
+    "pub_date": "2023-03-01T21:00:00Z",
+    "author": 1,
+    "image": "images/96e63d65b258797e47ba5f48cae6d84d_gPDln9Y.jpeg",
+    "magazine": 2
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 6,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:18:20.444Z",
+    "title": "Астрономы обнаружили «невозможную» черную дыру массой в 1 млрд солнц в ранней Вселенной",
+    "text": "Объект, найденный телескопом JWST, существовал всего через 500 млн лет после Большого взрыва. Его размеры бросают вызов современным теориям формирования черных дыр. Версии: коллапс темной материи или ошибка в расчетах?",
+    "pub_date": "2022-05-01T21:00:00Z",
+    "author": 1,
+    "image": "images/ee04ecca-0d793b030acdacfb7cd4bf08460ce9ed_xYjJDMv.jpg",
+    "magazine": 3
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 7,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:19:34.509Z",
+    "title": "Проект Breakthrough Starshot: первые успехи в лазерном разгоне нанозондов",
+    "text": "В 2024 году тестовые чипы размером с почтовую марку достигли 20% скорости света в вакуумной камере. Проблемы: защита от космической пыли и передача данных на Землю.",
+    "pub_date": "2024-09-29T21:00:00Z",
+    "author": 1,
+    "image": "images/starshot_ixVFxLq.jpg",
+    "magazine": 3
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 8,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:26:28.959Z",
+    "title": "Нанороботы уничтожили опухоль мозга за 3 недели: первые результаты испытаний",
+    "text": "Устройства на основе ДНК-оригами доставляли химиотерапию точно в клетки глиобластомы, минуя здоровые ткани. Эффективность — 78% регрессии у мышей. Когда ждать тестов на людях?",
+    "pub_date": "2022-07-09T21:00:00Z",
+    "author": 1,
+    "image": "images/5012_photo.jpg",
+    "magazine": 4
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 9,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-06T19:27:46.007Z",
+    "title": "ИИ + стволовые клетки: напечатанная печень прошла тесты на свиньях",
+    "text": "Биопринтер, управляемый алгоритмом DeepCell, создал орган с функциональными капиллярами. Через 2 месяца после пересадки у животных нормализовались показатели печеночных ферментов.",
+    "pub_date": "2024-02-03T21:00:00Z",
+    "author": 1,
+    "image": "images/images.jpg",
+    "magazine": 4
+  }
+},
+{
+  "model": "blog.post",
+  "pk": 11,
+  "fields": {
+    "is_published": true,
+    "created_at": "2025-04-08T08:00:13.536Z",
+    "title": "Илья БАчило",
+    "text": "мальчик-гений",
+    "pub_date": "2004-03-09T21:00:00Z",
+    "author": 1,
+    "image": "",
+    "magazine": 1
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 1,
+  "fields": {
+    "is_published": true,
+    "text": "Ничего себе! Это вам не ОСТИС!",
+    "post": 1,
+    "created_at": "2025-04-06T19:44:48.949Z",
+    "author": 2
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 2,
+  "fields": {
+    "is_published": true,
+    "text": "ИИ рулит, йоу",
+    "post": 1,
+    "created_at": "2025-04-06T19:45:17.326Z",
+    "author": 2
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 3,
+  "fields": {
+    "is_published": true,
+    "text": "вооооооу",
+    "post": 7,
+    "created_at": "2025-04-06T20:25:30.342Z",
+    "author": 1
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 4,
+  "fields": {
+    "is_published": true,
+    "text": "лол кек,  аххахаа",
+    "post": 2,
+    "created_at": "2025-04-07T08:48:29.992Z",
+    "author": 2
+  }
+},
+{
+  "model": "blog.comment",
+  "pk": 5,
+  "fields": {
+    "is_published": true,
+    "text": "вот это прикольно",
+    "post": 7,
+    "created_at": "2025-04-08T08:01:42.419Z",
+    "author": 2
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2025-04-06T18:44:29.413Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "1",
+    "object_repr": "«Neural»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2025-04-06T18:45:32.779Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "2",
+    "object_repr": "«Биохакинг»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2025-04-06T18:46:29.983Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "3",
+    "object_repr": "«Горизонт»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2025-04-06T18:47:35.493Z",
+    "user": 1,
+    "content_type": 1,
+    "object_id": "4",
+    "object_repr": "«Медицина будущего»",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add категория",
+    "content_type": 1,
+    "codename": "add_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change категория",
+    "content_type": 1,
+    "codename": "change_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete категория",
+    "content_type": 1,
+    "codename": "delete_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view категория",
+    "content_type": 1,
+    "codename": "view_category"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add местоположение",
+    "content_type": 2,
+    "codename": "add_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change местоположение",
+    "content_type": 2,
+    "codename": "change_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete местоположение",
+    "content_type": 2,
+    "codename": "delete_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view местоположение",
+    "content_type": 2,
+    "codename": "view_location"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add публикация",
+    "content_type": 3,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change публикация",
+    "content_type": 3,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete публикация",
+    "content_type": 3,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view публикация",
+    "content_type": 3,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add comment",
+    "content_type": 4,
+    "codename": "add_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change comment",
+    "content_type": 4,
+    "codename": "change_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete comment",
+    "content_type": 4,
+    "codename": "delete_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view comment",
+    "content_type": 4,
+    "codename": "view_comment"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 5,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 5,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 5,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 5,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 6,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 6,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 6,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 6,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 7,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 7,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 7,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 7,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 8,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 8,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 8,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 8,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 9,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 9,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 9,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 9,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 10,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 10,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 10,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 10,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add журнал",
+    "content_type": 1,
+    "codename": "add_magazine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change журнал",
+    "content_type": 1,
+    "codename": "change_magazine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete журнал",
+    "content_type": 1,
+    "codename": "delete_magazine"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view журнал",
+    "content_type": 1,
+    "codename": "view_magazine"
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$HnMelJKFBUDlgD4UatkOQN$AZxTEY0utzT241N7+q8plCRH/vpZDoPCS8lo+P9Jb8U=",
+    "last_login": "2025-04-07T08:49:15.488Z",
+    "is_superuser": true,
+    "username": "iluxa",
+    "first_name": "Илья",
+    "last_name": "Горячев",
+    "email": "ilyagoryachev2005@gamil.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2025-04-06T18:20:42.037Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "users.customuser",
+  "pk": 2,
+  "fields": {
+    "password": "pbkdf2_sha256$600000$3UDRraJp0s98N6Cbs4QERr$tIVdxoJGnvGpUxGhw7c7dJbk/sD3l5Zs4UYjw3DhI4U=",
+    "last_login": "2025-04-08T08:01:27.546Z",
+    "is_superuser": false,
+    "username": "Ilya",
+    "first_name": "Илья",
+    "last_name": "Бачило",
+    "email": "",
+    "is_staff": false,
+    "is_active": true,
+    "date_joined": "2025-04-06T19:43:57.383Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "blog",
+    "model": "magazine"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "blog",
+    "model": "location"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "blog",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "blog",
+    "model": "comment"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "761bygr3oze3k3bs3gi12y96k70nc1fr",
+  "fields": {
+    "session_data": ".eJxVjMsOwiAURP-FtSHApTxcuu83ELiAVA0kpV0Z_12adKHLmXNm3sT5fStu72l1SyRXIsjltwsen6keID58vTeKrW7rEuih0JN2OreYXrfT_TsovpexRi-TlkzqLFTOYLzQyajIQElpA2cWpqSRAQ8DKDTRAscRMARACRP5fAHSMjdr:1u23tf:3htU6_IjrjLVls0vB1sVQ7KFY57-2dHSmvd3UXtKlns",
+    "expire_date": "2025-04-22T08:01:27.721Z"
+  }
+}
+]
